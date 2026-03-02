@@ -9,8 +9,7 @@ const multer = require("multer");
 const app = express();
 app.use(cors());
 
-const CONNECTION_STRING =
-  "mongodb://localhost:27017/";
+const CONNECTION_STRING ="paste_the_connection_string_from_mongodb_compass";
 
 const DATABASENAME = "MyDb";
 let database;

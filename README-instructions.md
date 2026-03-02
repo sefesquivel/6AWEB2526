@@ -22,7 +22,7 @@
 
 ### Run the backend - node index.js
 
-## UI - Using Angular (version 16)
+## UI - Using Angular (version 19)
 
 ## Check on the contents of each file, DO NOT OVERWRITE, check on each component/lines before modification.
 ## Display all fields and format the output accordingly.

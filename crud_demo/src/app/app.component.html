@@ -10,7 +10,7 @@
   <h3>
     <b>* {{ book.title }}</b>
     <b> | {{ book.desc }}</b>
-    <b> | {{ book.price }}</b>  
+    <b> | {{ book.price }}</b>
     <button (click)="deleteBook(book.id)">Delete book</button>
   </h3>
 } @empty {
@@ -18,3 +18,4 @@
 }
 
 <router-outlet />
+

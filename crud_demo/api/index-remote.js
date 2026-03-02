@@ -12,11 +12,10 @@ dns.setServers(["1.1.1.1", "1.0.0.1"]);
 const app = express();
 app.use(cors());
 
-// ✅ IMPORTANT: Use the STANDARD (non-SRV) connection string from Atlas (mongodb://...)
 // Atlas → Connect → Drivers → Standard connection string
 // Paste it here EXACTLY, including the correct replicaSet value.
 const CONNECTION_STRING =
-  "mongodb+srv://sef:Newwave123@cluster0.jaheaoh.mongodb.net/?appName=Cluster0";
+  "mongodb+srv://username:password@cluster0.jaheaoh.mongodb.net/?appName=Cluster0";
 
 const DATABASENAME = "MyDb";
 let database;
@@ -98,4 +97,5 @@ app.delete("/api/books/DeleteBook", async (req, res) => {
     res.status(500).json({ error: "Failed to delete book" });
   }
 });
+
 

@@ -1,0 +1,20 @@
+<p>Books Application</p>
+
+<input id="newBook" placeholder="title">
+<input id="newDesc" placeholder="description">
+<input id="newPrice" placeholder="book price">
+
+<button (click)="addBook()">Add book</button>
+
+@for (book of books; track book.id) {
+  <h3>
+    <b>* {{ book.title }}</b>
+    <b> | {{ book.desc }}</b>
+    <b> | {{ book.price }}</b>  
+    <button (click)="deleteBook(book.id)">Delete book</button>
+  </h3>
+} @empty {
+  <p>No books available</p>
+}
+
+<router-outlet />

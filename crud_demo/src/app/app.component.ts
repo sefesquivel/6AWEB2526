@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'booksapp';
   //set the link of the based route
   readonly APIUrl="http://localhost:5038/api/books/";
-  
+
 
   constructor(private http:HttpClient){
   }
@@ -41,7 +41,7 @@ export class AppComponent {
       this.refreshBooks()
     })
   }
-  
+
   deleteBook(id:any){
       this.http.delete(this.APIUrl+'DeleteBook?id='+id).subscribe(data=>{
       alert(data);
@@ -49,3 +49,4 @@ export class AppComponent {
     })
   }
 }
+
